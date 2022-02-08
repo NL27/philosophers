@@ -39,9 +39,9 @@ void	init_philostatus(t_philo *philo)
 	{
 		philo->status = SLEEP;
 		if (philo->data->nbr_philo < 100)
-			usleep(200);
+			ft_usleep(200);
 		else
-			usleep(1000);
+			ft_usleep(100);
 	}
 	else
 		philo->status = THINK;
